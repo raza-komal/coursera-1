@@ -1,17 +1,19 @@
-import { Navbar,NavbarBrand } from 'reactstrap';
-import './App.css';
+import { Nav, Navbar, NavbarBrand, NavItem } from "reactstrap";
+import "./App.css";
+import CustomerStories from "./components/CustomerStories";
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <Navbar>
-        <div className="container">
-          <NavbarBrand href="/">
-            Nanonets
-          </NavbarBrand> 
+      <Navbar className="navbar">
+        <div className="container ">
+          <NavbarBrand href="/">Nanonets</NavbarBrand>
         </div>
-
       </Navbar>
+
+      <Header />
+      <CustomerStories/>
     </div>
   );
 }
